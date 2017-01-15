@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # valiabls
-AWS_DEFAULT_REGION=us-east-1
+AWS_DEFAULT_REGION=ap-northeast-1
 AWS_ECS_TASKDEF_NAME=homepage
 AWS_ECS_CLUSTER_NAME=okamuro
 AWS_ECS_SERVICE_NAME=homepage
