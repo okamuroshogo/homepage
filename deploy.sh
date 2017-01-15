@@ -2,9 +2,9 @@
 
 # valiabls
 AWS_DEFAULT_REGION=ap-northeast-1c
-AWS_ECS_TASKDEF_NAME=mona
-AWS_ECS_CLUSTER_NAME=mona
-AWS_ECS_SERVICE_NAME=mona
+AWS_ECS_TASKDEF_NAME=homepage
+AWS_ECS_CLUSTER_NAME=okamuro
+AWS_ECS_SERVICE_NAME=homepage
 AWS_ECR_REP_NAME=aws/okamu.ro
 
 # Create Task Definition
