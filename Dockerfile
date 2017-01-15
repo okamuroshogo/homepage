@@ -10,7 +10,7 @@ RUN rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos
 
 RUN yum -y install nginx
 
-ADD ./ /usr/share/nginx/html
+ADD html /usr/share/nginx/html
 
 ENTRYPOINT /usr/sbin/nginx -g 'daemon off;' -c /etc/nginx/nginx.conf
 
