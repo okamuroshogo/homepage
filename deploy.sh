@@ -6,7 +6,7 @@ AWS_ECS_TASKDEF_NAME=homepage
 AWS_ECS_CLUSTER_NAME=okamuro
 AWS_ECS_SERVICE_NAME=homepage
 AWS_ECR_REP_NAME=aws/okamu.ro/homepage
-AWS_ACCOUNT_ID=943556878241
+AWS_ACCOUNT=943556878241
 
 # Create Task Definition
 make_task_def(){
@@ -26,7 +26,7 @@ make_task_def(){
 		}
 	]'
 
-	task_def=$(printf "$task_template" ${AWS_ECS_TASKDEF_NAME} ${AWS_ACCOUNT_ID} ${AWS_DEFAULT_REGION} ${AWS_ECR_REP_NAME} $CIRCLE_SHA1)
+	task_def=$(printf "$task_template" ${AWS_ECS_TASKDEF_NAME} ${AWS_ACCOUNT} ${AWS_DEFAULT_REGION} ${AWS_ECR_REP_NAME} $CIRCLE_SHA1)
 
 }
 
@@ -70,7 +70,7 @@ deploy_cluster() {
 push_ecr_image(){
 	eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION})
     #docker tag $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/${AWS_ECR_REP_NAME}:$CIRCLE_SHA1 943556878241.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:latest
-   	docker push ${AWS_ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/${AWS_ECR_REP_NAME}:$CIRCLE_SHA1
+   	docker push ${AWS_ACCOUNT}.dkr.ecr.ap-northeast-1.amazonaws.com/${AWS_ECR_REP_NAME}:$CIRCLE_SHA1
     #docker push 943556878241.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:latest
 }
 
