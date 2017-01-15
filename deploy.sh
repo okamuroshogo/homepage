@@ -5,7 +5,7 @@ AWS_DEFAULT_REGION=us-east-1
 AWS_ECS_TASKDEF_NAME=homepage
 AWS_ECS_CLUSTER_NAME=okamuro
 AWS_ECS_SERVICE_NAME=homepage
-AWS_ECR_REP_NAME=aws/okamu.ro
+AWS_ECR_REP_NAME=aws/okamu.ro/homepage
 
 # Create Task Definition
 make_task_def(){
