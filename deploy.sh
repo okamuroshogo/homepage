@@ -68,8 +68,8 @@ deploy_cluster() {
 
 push_ecr_image(){
 	eval $(aws ecr get-login --region ${AWS_DEFAULT_REGION})
-    docker tag $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/${AWS_ECR_REP_NAME}:$CIRCLE_SHA1 943556878241.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:latest
-    docker push 943556878241.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:latest
+    docker tag $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/${AWS_ECR_REP_NAME}:$CIRCLE_SHA1 $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:$CIRCLE_SHA1
+    docker push $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:$CIRCLE_SHA1
 }
 
 register_definition() {
