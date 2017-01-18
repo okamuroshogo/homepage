@@ -4,11 +4,11 @@ machine:
 
 dependencies:
   post:
-    - docker build -t ${AWS_ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:${CIRCLE_SHA1} .
+    - docker build -t $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:$CIRCLE_SHA1 .
 
 test:
   post:
-    - docker run -d -p 80:80 --name homepage ${AWS_ACCOUNT_ID}.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:${CIRCLE_SHA1}; sleep 10
+    - docker run -d -p 80:80 --name homepage $AWS_ACCOUNT_ID.dkr.ecr.ap-northeast-1.amazonaws.com/aws/okamu.ro/homepage:$CIRCLE_SHA1; sleep 10
 
 deployment:
   prod:
