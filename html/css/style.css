@@ -193,7 +193,7 @@ p {
 /* divider section styles
 /* ========================================== */
 #divider {
-   background: url('../images/divider-bg.jpg') 50% 0 repeat-y fixed;
+   background: url('../images/divider-bg.png') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
