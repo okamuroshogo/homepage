@@ -1,0 +1,210 @@
+extends /layout/_default-layout
+
+prepend config-block
+  - page_name = ''
+
+//- append stylesheet-block
+
+//- append javascript-block
+
+block content-block
+  div.contents
+    section.navbar.navbar-default.navbar-fixed-top.sticky-navigation(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon.icon-bar
+            span.icon.icon-bar
+            span.icon.icon-bar
+          a.navbar-brand(href='#') okamu.ro
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right.main-navigation
+            li
+              a.smoothScroll(href='#home') HOME
+            li
+              a.smoothScroll(href='#intro') OKAMU
+            li
+              a.smoothScroll(href='#about') ABOUT
+            li
+              a.smoothScroll(href='#team') PRODUCT
+            li
+              a.smoothScroll(href='#contact') CONTACT
+    section#home.parallax-section
+      video.logo-video(autoplay)
+        source(src="movie/logo.mp4" type="video/mp4")
+        |Your browser does not support the video tag.
+    section#divider.paralla-section
+      .container
+        .row
+          .col-md-offset-2.col-md-8.col-sm-8.wow.fadeInUp(data-wow-delay='0.6s') 
+            h2 OKAMURO SHOGO
+            p
+              | [2018/01/01] (恋愛)　　　カップルのための近未来的Yes/No枕あぷり「Glance」をリリース
+              br
+              |           [2017/12/09] (出会い系)　かまってちゃんのマッチングサービスkamatteをリリース
+              br
+              |           [2017/07/01] (サイト)　　卑猥.cityのサービスを開始
+              br
+              |           [2016/10/01] (出会い系)　出会い系アプリ「Mona」の開発を開始
+              br
+              | 					[2016/04/26] (九工大)　　九工大アプリ(戸畑/生命)リリース
+              br
+              | 					[2016/01/21] (九工大)　　九工大bot(戸畑/生命)運用開始
+              br
+              | 					[2016/11/25] (結婚)　　　飯塚アプリコンテスト「婚タクト」グランプリ/ビットアイル賞/ハウインターナショナル賞
+              br
+              |           [2015/10/00] (合コン)　　mashupawardにてFeelingCall by P&DがKDDIウェブコミュニケーションズ賞
+              br
+              | 					[2015/01/21] (学フェス)　福岡ビジネスデジタルコンテンツ賞2015でMOVIDA JAPAN賞
+              br
+              | 					[2014/12/28] (学フェス)　九州アプリチャレンジキャラバンで最優秀賞（作品賞）
+              br
+              | 					[2014/11/25] (学フェス)　飯塚アプリコンテストで飯塚市長賞／ビットアイル賞
+              br
+              | 					[2014/11/14] (九工大)　　「九工大アプリ飯塚」リリース
+              br
+              | 					[2014/10/27] (九工大)　　「九工大bot飯塚」運用開始
+              br
+              | 					[2014/05/01] (合コン)　　「合コンアプリ」リリース
+              br
+              | 					[2011/11/??] (トイレ)　　「トイレアプリ」で起業をしようとしたが...
+              br
+              |           [2011/01/01] (エンタメ)　作曲アプリ「クリメロ」を製作
+              br
+    section#team.parallax-section
+      .container
+        .row
+          .col-md-8.col-sm-8
+            .section-title
+              h2 PRODUCTS
+          .col-md-12.col-sm-12
+          #owl-team.owl-carousel
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/kamatte.png', alt='glance img')
+                  h2
+                    a(href='https://kamatte.cc') kamatte | かまって
+                  h4 かまってちゃんのためのマッチングサービス
+                  p kamatteは、twitter上のかまってちゃんを
+                  p
+                  p 勝手にマッチングして、お店の手配までするwebサービスです
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/glance.png', alt='glance img')
+                  h2
+                    a(href='https://itunes.apple.com/jp/app/glance-yes-no%E3%81%BE%E3%81%8F%E3%82%89/id1294641754?l=ja&ls=1&mt=8') 近未来的Yes/Noまくらアプリ
+                  h4 アプリアイコンでパートナーのYesかNoがわかるアプリが登場
+                  p 登録は簡単！！QRコードをお互いにかざすだけ。
+                  p あとは、気分でステータスを変更すれば、Yes/Noが相手に伝わります。
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/hiwai.png', alt='mona img')
+                  h2
+                    a(href='http://hiwai.city') HIWAI.city
+                  h4 防犯サービス
+                  p 卑猥.city(ひわいどっとシティ)は、世の中のいわゆる不審者等の出現エリアを登録し、リアルタイムに可視化する防犯サービスである。
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_0.png', alt='mona img')
+                  h2 Mona(開発中)
+                  h4 友達系アプリ「Mona」
+                  p
+                    br
+                    | 学生同士で友達の輪を広げましょう!!
+                    br
+                    | こっそり恋人も募集できちゃうから、
+                    br
+                    | もうこれで寂しくない!?
+                    br
+                    | いいねしてもらうとポイントがもらえるよ!!
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_1.jpg', alt='neighber img')
+                  h2
+                    a(href='https://itunes.apple.com/jp/app/neighborapp/id881887852?mt=8') neighborApp
+                  h4 席替えアプリ
+                  p
+                    | 1,3Kダウンロード突破！
+                    br
+                    | 合コンで席替えするときに便利です。
+                    br
+                    | 円卓に対応のほか車のシート決めもできます。
+                    br
+                    | こっそりと設定をしておけば...
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_2.jpg', alt='contact img')
+                  h2
+                    a(href='https://itunes.apple.com/jp/app/%E5%A9%9A%E3%82%BF%E3%82%AF%E3%83%88/id1120642916?mt=8') 婚タクト
+                  h4 結婚式SNS
+                  p 結婚式で撮影した写真を出席者同士で共有することができます。また、招待状から送ることによって、余興の打ち合わせなどにも幅広く便利に使えます!!
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_3.jpg', alt='kyutechapp img')
+                  h2
+                    a(href='https://itunes.apple.com/jp/app/九工大/id658354583?mt=8') 九工大アプリ
+                  h4 ３キャンパス対応・九工大生向けアプリ
+                  p 電子掲示板やHPのお知らせを手元で確認できます。また、シラバスと連携した時間割表の作成やスクールバスの時刻表も連動してさらに使いやすくなりました
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_4.jpg', alt='tsuccomu img')
+                  h2
+                    a(href='https://devpost.com/software/km_04') Tsuccomu(ツッコミュ)
+                  h4 ツッコミAI
+                  p
+                    | youtube等のお笑い動画からボケとツッコミを抽出しておき、日常会話などでアプリが突っ込んでくれるアプリ
+                    br
+                    | 話がめんどくさい友達や上司にぴったり
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_5.jpg', alt='cremero img')
+                  h2 Create Melody
+                  h4  ~くりめろ~
+                  p ガラケー時代の作曲アプリのように、ドレミの音階で作曲・演奏ができます
+            .item
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(src='images/team_6.jpg', alt='testimonial img')
+                  h2
+                    a(href='https://www.youtube.com/watch?v=2HOionn9CzY&feature=youtu.be') FeelingCall
+                  h4 フィーリングコール
+                  p
+                    | 合コンの後、気になる子と両思いかどうかが電話でわかる！両思いならば直接通話スタート！そうでなければお祈りメッセージ！それが電話を使った新感覚フィーリングカップル「FeelingCall」です！！
+    section#contact.parallax-section
+      .container
+        .row
+          .col-md-6.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
+            .contact-detail
+              h2 CONTACT
+              p ご用等ありましたら、メールにて承ります。
+              div
+                h4 okamu.ro
+                p
+                  i.fa.fa-map
+                  |  shogo@okamu.ro
+    footer
+      .container
+        .row
+          .col-md-12.col-sm-12
+            p © 2016 okamu.ro - All rights Reserved.
+            div
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/smoothscroll.js')
+    script(src='js/jquery.nav.js')
+    script(src='js/jquery.parallax.js')
+    script(src='js/owl.carousel.min.js')
+    script(src='js/isotope.min.js')
+    script(src='js/wow.min.js')
+    script(src='js/counter.js')
+    script(src='js/custom.js')
+
