@@ -67,6 +67,9 @@ table {
     margin-bottom: 3vw;
     color: #888888; }
 
+.col-md-offset-2 p {
+  text-align: left; }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
