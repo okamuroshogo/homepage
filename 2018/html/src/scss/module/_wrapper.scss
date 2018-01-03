@@ -7,5 +7,18 @@
 
 .logo-video {
   width: 100%; 
-  height: 100%;
+}
+
+.default-logo {
+  width: 100%;
+  text-align: center;
+  p {
+    -webkit-text-size-adjust: 100%;
+    font-size: 8vw;
+    font-weight: bold;
+    font-family: Verdana;
+    letter-spacing: 0.8vw;
+    margin-bottom: 3vw;
+    color: rgb(136, 136, 136);
+  };
 }

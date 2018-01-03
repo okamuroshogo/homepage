@@ -9823,4 +9823,8 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+(0, _jquery2.default)('.logo-video').on('ended', function () {
+  (0, _jquery2.default)('.logo-video').remove();
+});
+
 },{"jquery":1}]},{},[2]);
