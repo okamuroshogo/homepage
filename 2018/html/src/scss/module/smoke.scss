@@ -1,0 +1,37 @@
+.smoke {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .okamuro {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .okamuro:hover .txt {
+    animation: animate 2s linear both;
+  }
+   
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg) translateY(0px);
+      opacity: 1;
+      filter: blur(1px);
+    }
+   
+    100% {
+      transform: rotate(30deg) translateY(-300px);
+      opacity :0;
+      filter: blur(100px);
+    }
+  }
+   
+  .okamuro {
+    @for $i from 1 through 8 {
+      .txt:nth-child(#{$i}) {
+        animation-delay: #{random(100) / 500}s;
+      }
+    }
+  }
+}

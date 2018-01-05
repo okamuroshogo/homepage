@@ -9825,6 +9825,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)('.logo-video').on('ended', function () {
   (0, _jquery2.default)('.logo-video').remove();
+  (0, _jquery2.default)('.okamuro').show().css('display', 'flex');
 });
 
 },{"jquery":1}]},{},[2]);
