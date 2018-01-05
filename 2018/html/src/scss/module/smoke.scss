@@ -3,17 +3,39 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  .hello {
+    margin: 0;
+    padding: 0;
+    display: none;
+    animation: animate-down 1s linear both;
+  }
+
   .okamuro {
     margin: 0;
     padding: 0;
     display: none;
+    animation: animate-down 1s linear both;
   }
 
-  .okamuro:hover .txt {
-    animation: animate 2s linear both;
+  .fadeout {
+    animation: animate-up 2s linear both;
   }
+
+  @keyframes animate-down {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+      filter: blur(1px);
+    }
    
-  @keyframes animate {
+    0% {
+      transform: translateY(-100px);
+      opacity :0;
+      filter: blur(100px);
+    }
+  }
+
+  @keyframes animate-up {
     0% {
       transform: rotate(0deg) translateY(0px);
       opacity: 1;
@@ -28,7 +50,15 @@
   }
    
   .okamuro {
-    @for $i from 1 through 8 {
+    @for $i from 1 through 12 {
+      .txt:nth-child(#{$i}) {
+        animation-delay: #{random(100) / 500}s;
+      }
+    }
+  }
+
+  .hello {
+    @for $i from 1 through 12 {
       .txt:nth-child(#{$i}) {
         animation-delay: #{random(100) / 500}s;
       }

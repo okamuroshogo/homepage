@@ -9823,9 +9823,38 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var logoTexts = ['.hello', '.okamuro'];
+var index = 0;
+
+var logoAnimate = function logoAnimate() {
+  console.log(index);
+  if (index < 0) {
+    index++;return;
+  }
+  (0, _jquery2.default)(logoTexts[index] + ' .txt').addClass('fadeout');
+  setTimeout(function () {
+    (0, _jquery2.default)(logoTexts[index] + ' .txt').removeClass("fadeout");
+    (0, _jquery2.default)(logoTexts[index]).hide();
+    index++;
+    index %= logoTexts.length;
+    (0, _jquery2.default)(logoTexts[index]).show().css('display', 'flex');
+  }, 2000);
+};
+
 (0, _jquery2.default)('.logo-video').on('ended', function () {
   (0, _jquery2.default)('.logo-video').remove();
-  (0, _jquery2.default)('.okamuro').show().css('display', 'flex');
+  (0, _jquery2.default)(logoTexts[index]).show().css('display', 'flex');
+  setInterval(logoAnimate, 5000);
+});
+
+(0, _jquery2.default)('.okamuro, .hello').hover(function () {
+  var name = (0, _jquery2.default)(this).attr("class");
+  console.log(name);
+  (0, _jquery2.default)('.' + name + ' .txt').addClass('fadeout');
+  setTimeout(function () {
+    (0, _jquery2.default)('.' + name).hide();
+    (0, _jquery2.default)('.' + name + ' .txt').removeClass("fadeout");
+  }, 2000);
 });
 
 },{"jquery":1}]},{},[2]);
