@@ -10216,8 +10216,8 @@ button.close {
     -webkit-filter: blur(1px);
             filter: blur(1px); }
   100% {
-    -webkit-transform: rotate(30deg) translateY(-300px);
-            transform: rotate(30deg) translateY(-300px);
+    -webkit-transform: rotate(30deg) translateY(-100px);
+            transform: rotate(30deg) translateY(-100px);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="100" /></filter></svg>#filter');
@@ -10234,37 +10234,37 @@ button.close {
     -webkit-filter: blur(1px);
             filter: blur(1px); }
   100% {
-    -webkit-transform: rotate(30deg) translateY(-300px);
-            transform: rotate(30deg) translateY(-300px);
+    -webkit-transform: rotate(30deg) translateY(-100px);
+            transform: rotate(30deg) translateY(-100px);
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="100" /></filter></svg>#filter');
     -webkit-filter: blur(100px);
             filter: blur(100px); } }
   .smoke .okamuro .txt:nth-child(1) {
-    -webkit-animation-delay: 0.03s;
-            animation-delay: 0.03s; }
+    -webkit-animation-delay: 0.044s;
+            animation-delay: 0.044s; }
   .smoke .okamuro .txt:nth-child(2) {
-    -webkit-animation-delay: 0.03s;
-            animation-delay: 0.03s; }
+    -webkit-animation-delay: 0.156s;
+            animation-delay: 0.156s; }
   .smoke .okamuro .txt:nth-child(3) {
-    -webkit-animation-delay: 0.112s;
-            animation-delay: 0.112s; }
+    -webkit-animation-delay: 0.192s;
+            animation-delay: 0.192s; }
   .smoke .okamuro .txt:nth-child(4) {
-    -webkit-animation-delay: 0.19s;
-            animation-delay: 0.19s; }
+    -webkit-animation-delay: 0.026s;
+            animation-delay: 0.026s; }
   .smoke .okamuro .txt:nth-child(5) {
-    -webkit-animation-delay: 0.148s;
-            animation-delay: 0.148s; }
+    -webkit-animation-delay: 0.078s;
+            animation-delay: 0.078s; }
   .smoke .okamuro .txt:nth-child(6) {
-    -webkit-animation-delay: 0.106s;
-            animation-delay: 0.106s; }
+    -webkit-animation-delay: 0.002s;
+            animation-delay: 0.002s; }
   .smoke .okamuro .txt:nth-child(7) {
-    -webkit-animation-delay: 0.104s;
-            animation-delay: 0.104s; }
+    -webkit-animation-delay: 0.002s;
+            animation-delay: 0.002s; }
   .smoke .okamuro .txt:nth-child(8) {
-    -webkit-animation-delay: 0.04s;
-            animation-delay: 0.04s; }
+    -webkit-animation-delay: 0.064s;
+            animation-delay: 0.064s; }
 
 /* Body 
 ------------------------------------- */
