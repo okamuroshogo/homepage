@@ -9846,4 +9846,12 @@ var logoAnimate = function logoAnimate() {
   setInterval(logoAnimate, 5000);
 });
 
+(0, _jquery2.default)(window).scroll(function () {
+  if (window.pageYOffset > 0) {
+    (0, _jquery2.default)('.scroll-bellow').hide();
+  } else {
+    (0, _jquery2.default)('.scroll-bellow').show();
+  }
+});
+
 },{"jquery":1}]},{},[2]);

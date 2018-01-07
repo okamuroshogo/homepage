@@ -50,7 +50,7 @@ $(document).ready(function() {
    /*  smoothscroll
     -----------------------------------------------*/
    $(function() {
-        $('.navbar-default a').bind('click', function(event) {
+        $('.smoothScroll').bind('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 49
@@ -76,12 +76,8 @@ $(document).ready(function() {
     -----------------------------------------------*/
   function initParallax() {
     $('#home').parallax("100%", 0.1);
-    $('#intro').parallax("100%", 0.3);
-    $('#divider').parallax("100%", 0.1);
-    $('#about').parallax("100%", 0.3);
-    $('#service').parallax("100%", 0.1);
-    $('#counter').parallax("100%", 0.2);
-    $('#team').parallax("100%", 0.2);
+    $('#okamu').parallax("100%", 0.1);
+    $('#product').parallax("100%", 0.2);
     $('#contact').parallax("100%", 0.3);
 
   }

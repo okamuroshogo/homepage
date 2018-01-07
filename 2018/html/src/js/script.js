@@ -21,3 +21,10 @@ $('.logo-video').on('ended', () => {
   setInterval(logoAnimate, 5000);
 });
 
+$(window).scroll(function() {
+  if (window.pageYOffset > 0) {
+    $('.scroll-bellow').hide();
+  } else { 
+    $('.scroll-bellow').show();
+  }
+});

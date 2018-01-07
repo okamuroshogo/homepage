@@ -78,6 +78,12 @@ table {
 .col-md-offset-2 p {
   text-align: left; }
 
+.scroll-bellow {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px; }
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
@@ -10205,6 +10211,58 @@ button.close {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center; }
 
+.scroll-bellow a {
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  margin: auto;
+  text-align: center;
+  width: 100px;
+  height: 100px; }
+
+.scroll-bellow a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 1.5s infinite;
+  animation: sdb 1.5s infinite;
+  box-sizing: border-box; }
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  50% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
+@keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+  50% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; } }
+
 .smoke {
   position: absolute;
   left: 50%;
@@ -10322,77 +10380,77 @@ button.close {
     filter: blur(100px);
     -webkit-filter: blur(100px); } }
   .smoke .okamuro .txt:nth-child(1) {
-    -webkit-animation-delay: 0.088s;
-            animation-delay: 0.088s; }
+    -webkit-animation-delay: 0.192s;
+            animation-delay: 0.192s; }
   .smoke .okamuro .txt:nth-child(2) {
-    -webkit-animation-delay: 0.162s;
-            animation-delay: 0.162s; }
+    -webkit-animation-delay: 0.062s;
+            animation-delay: 0.062s; }
   .smoke .okamuro .txt:nth-child(3) {
-    -webkit-animation-delay: 0.176s;
-            animation-delay: 0.176s; }
+    -webkit-animation-delay: 0.156s;
+            animation-delay: 0.156s; }
   .smoke .okamuro .txt:nth-child(4) {
-    -webkit-animation-delay: 0.068s;
-            animation-delay: 0.068s; }
+    -webkit-animation-delay: 0.118s;
+            animation-delay: 0.118s; }
   .smoke .okamuro .txt:nth-child(5) {
-    -webkit-animation-delay: 0.154s;
-            animation-delay: 0.154s; }
-  .smoke .okamuro .txt:nth-child(6) {
-    -webkit-animation-delay: 0.066s;
-            animation-delay: 0.066s; }
-  .smoke .okamuro .txt:nth-child(7) {
-    -webkit-animation-delay: 0.01s;
-            animation-delay: 0.01s; }
-  .smoke .okamuro .txt:nth-child(8) {
-    -webkit-animation-delay: 0.188s;
-            animation-delay: 0.188s; }
-  .smoke .okamuro .txt:nth-child(9) {
-    -webkit-animation-delay: 0.166s;
-            animation-delay: 0.166s; }
-  .smoke .okamuro .txt:nth-child(10) {
-    -webkit-animation-delay: 0.126s;
-            animation-delay: 0.126s; }
-  .smoke .okamuro .txt:nth-child(11) {
-    -webkit-animation-delay: 0.138s;
-            animation-delay: 0.138s; }
-  .smoke .okamuro .txt:nth-child(12) {
-    -webkit-animation-delay: 0.148s;
-            animation-delay: 0.148s; }
-  .smoke .hello .txt:nth-child(1) {
     -webkit-animation-delay: 0.13s;
             animation-delay: 0.13s; }
+  .smoke .okamuro .txt:nth-child(6) {
+    -webkit-animation-delay: 0.062s;
+            animation-delay: 0.062s; }
+  .smoke .okamuro .txt:nth-child(7) {
+    -webkit-animation-delay: 0.058s;
+            animation-delay: 0.058s; }
+  .smoke .okamuro .txt:nth-child(8) {
+    -webkit-animation-delay: 0.038s;
+            animation-delay: 0.038s; }
+  .smoke .okamuro .txt:nth-child(9) {
+    -webkit-animation-delay: 0.006s;
+            animation-delay: 0.006s; }
+  .smoke .okamuro .txt:nth-child(10) {
+    -webkit-animation-delay: 0.022s;
+            animation-delay: 0.022s; }
+  .smoke .okamuro .txt:nth-child(11) {
+    -webkit-animation-delay: 0.19s;
+            animation-delay: 0.19s; }
+  .smoke .okamuro .txt:nth-child(12) {
+    -webkit-animation-delay: 0.192s;
+            animation-delay: 0.192s; }
+  .smoke .hello .txt:nth-child(1) {
+    -webkit-animation-delay: 0.14s;
+            animation-delay: 0.14s; }
   .smoke .hello .txt:nth-child(2) {
-    -webkit-animation-delay: 0.068s;
-            animation-delay: 0.068s; }
+    -webkit-animation-delay: 0.058s;
+            animation-delay: 0.058s; }
   .smoke .hello .txt:nth-child(3) {
-    -webkit-animation-delay: 0.154s;
-            animation-delay: 0.154s; }
+    -webkit-animation-delay: 0.052s;
+            animation-delay: 0.052s; }
   .smoke .hello .txt:nth-child(4) {
-    -webkit-animation-delay: 0.178s;
-            animation-delay: 0.178s; }
+    -webkit-animation-delay: 0.058s;
+            animation-delay: 0.058s; }
   .smoke .hello .txt:nth-child(5) {
-    -webkit-animation-delay: 0.184s;
-            animation-delay: 0.184s; }
+    -webkit-animation-delay: 0.086s;
+            animation-delay: 0.086s; }
   .smoke .hello .txt:nth-child(6) {
-    -webkit-animation-delay: 0.15s;
-            animation-delay: 0.15s; }
+    -webkit-animation-delay: 0.166s;
+            animation-delay: 0.166s; }
   .smoke .hello .txt:nth-child(7) {
-    -webkit-animation-delay: 0.182s;
-            animation-delay: 0.182s; }
+    -webkit-animation-delay: 0.096s;
+            animation-delay: 0.096s; }
   .smoke .hello .txt:nth-child(8) {
-    -webkit-animation-delay: 0.082s;
-            animation-delay: 0.082s; }
+    -webkit-animation-delay: 0.194s;
+            animation-delay: 0.194s; }
   .smoke .hello .txt:nth-child(9) {
-    -webkit-animation-delay: 0.172s;
-            animation-delay: 0.172s; }
+    -webkit-animation-delay: 0.13s;
+            animation-delay: 0.13s; }
   .smoke .hello .txt:nth-child(10) {
-    -webkit-animation-delay: 0.024s;
-            animation-delay: 0.024s; }
+    -webkit-animation-delay: 0.168s;
+            animation-delay: 0.168s; }
   .smoke .hello .txt:nth-child(11) {
-    -webkit-animation-delay: 0.002s;
-            animation-delay: 0.002s; }
+    -webkit-animation-delay: 0.092s;
+            animation-delay: 0.092s; }
   .smoke .hello .txt:nth-child(12) {
-    -webkit-animation-delay: 0.014s;
-            animation-delay: 0.014s; }
+    -webkit-animation-delay: 0.048s;
+            animation-delay: 0.048s; }
 
 /* Body 
 ------------------------------------- */
@@ -10545,15 +10603,15 @@ p {
 
 /* divider section styles
 /* ========================================== */
-#divider {
+#okamu {
   background: url("../images/divider-bg.png") 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center;
   text-align: center;
   color: #ffffff; }
-  #divider h2 {
+  #okamu h2 {
     color: #ffffff; }
-  #divider .btn {
+  #okamu .btn {
     background: #ffffff;
     border: 3px solid #ffffff;
     border-radius: 100px;
@@ -10563,7 +10621,7 @@ p {
     padding: 14px 52px;
     margin-top: 52px;
     transition: all 0.4s ease-in-out; }
-    #divider .btn:hover {
+    #okamu .btn:hover {
       background: transparent;
       color: #ffffff; }
 
@@ -10586,17 +10644,17 @@ p {
 
 /* team section styles
 /* ========================================== */
-#team .col-md-4 {
+#product .col-md-4 {
   display: block;
   width: 100%;
   padding: 32px;
   text-align: center; }
 
-#team h2 {
+#product h2 {
   padding-top: 14px;
   padding-bottom: 0px; }
 
-#team h4 {
+#product h4 {
   color: #aaa;
   letter-spacing: 1px;
   padding-bottom: 12px; }
