@@ -59,6 +59,7 @@ p {
 .section-title {
   padding-top: 20px;
   padding-bottom: 62px;
+  text-align: center;
 }
 
 #intro, #about, #divider, #service, #team, #counter, #contact {
@@ -351,10 +352,14 @@ p {
 
   .contact-detail {
     border: 2px solid rgba(250,250,250,0);
-    padding: 0px 0px 40px 60px;
+    h2 {
+      color: #333;
+      text-align: center;
+    }
 
     div {
       padding-top: 10px;
+
 
       h4 {
         padding-bottom: 10px;

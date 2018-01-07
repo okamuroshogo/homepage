@@ -2529,7 +2529,8 @@ pre {
   }
 
   .col-md-8 {
-    width: 66.66666667%;
+    width: 100%;
+    text-align: center;
   }
 
   .col-md-7 {
@@ -2537,7 +2538,7 @@ pre {
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 100%;
   }
 
   .col-md-5 {
@@ -2705,7 +2706,7 @@ pre {
   }
 
   .col-md-offset-2 {
-    margin-left: 16.66666667%;
+    margin: auto;
   }
 
   .col-md-offset-1 {
@@ -3990,6 +3991,10 @@ textarea.input-lg {
 }
 
 @media (min-width: 768px) {
+  .col-sm-6, .col-sm-8 {
+    width: 100%;
+    text-align: center;
+  }
   .form-inline {
     .form-group {
       display: inline-block;
