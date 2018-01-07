@@ -4,7 +4,6 @@ const logoTexts = ['.hello', '.okamuro'];
 let index = 0;
 
 const logoAnimate = function(){
-  console.log(index);
   if(index < 0) { index++; return; }
   $(logoTexts[index] + ' .txt').addClass('fadeout');
     setTimeout(function(){
@@ -17,20 +16,8 @@ const logoAnimate = function(){
 };
 
 $('.logo-video').on('ended', () => {
-  $('.logo-video').remove();
+  $('.logo-video').hide();
   $(logoTexts[index]).show().css('display', 'flex');
   setInterval(logoAnimate, 5000);
 });
-
-$('.okamuro, .hello').hover(
-  function () {
-    const name = $(this).attr("class");
-    console.log(name);
-    $('.' + name + ' .txt').addClass('fadeout');
-    setTimeout(function(){
-      $('.' + name).hide();
-      $('.' + name + ' .txt').removeClass("fadeout");
-    }, 2000);
-  }
-);
 

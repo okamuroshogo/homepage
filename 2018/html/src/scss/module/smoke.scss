@@ -23,29 +23,45 @@
 
   @keyframes animate-down {
     100% {
-      transform: translateY(0px);
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) translateY(0px);
+      -webkit-transform: translate3d(0, 0, 0) translateY(0px);
+      -webkit-perspective: 1000;
       opacity: 1;
       filter: blur(1px);
+      -webkit-filter: blur(1px);
     }
    
     0% {
-      transform: translateY(-100px);
-      opacity :0;
-      filter: blur(100px);
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) translateY(-100px);
+      -webkit-transform: translate3d(0, 0, 0) translateY(-100px);
+      -webkit-perspective: 1000;
+      opacity: 0;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
     }
   }
 
   @keyframes animate-up {
     0% {
-      transform: rotate(0deg) translateY(0px);
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) rotate(0deg) translateY(0px);
+      -webkit-transform: translate3d(0, 0, 0) rotate(0deg) translateY(0px);
+      -webkit-perspective: 1000;
       opacity: 1;
       filter: blur(1px);
+      -webkit-filter: blur(1px);
     }
    
     100% {
-      transform: rotate(30deg) translateY(-100px);
-      opacity :0;
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) rotate(30deg) translateY(-100px);
+      -webkit-transform: translate3d(0, 0, 0) rotate(30deg) translateY(-100px);
+      -webkit-perspective: 1000;
+      opacity: 0;
       filter: blur(100px);
+      -webkit-filter: blur(100px);
     }
   }
    
