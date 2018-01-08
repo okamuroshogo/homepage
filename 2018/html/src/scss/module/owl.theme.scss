@@ -38,6 +38,7 @@
   .owl-page {
     display: inline-block;
     zoom: 1;
+    margin-bottom: 50px;
     *display: inline;
 
     /*IE7 life-saver */
@@ -54,7 +55,7 @@
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
       border-radius: 20px;
-      background: #202020;
+      background: #FFF;
     }
 
     &.active span {

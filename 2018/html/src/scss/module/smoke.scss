@@ -3,6 +3,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  .txt {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
   .hello {
     margin: 0;
     padding: 0;
