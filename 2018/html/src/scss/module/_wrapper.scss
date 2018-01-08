@@ -39,6 +39,9 @@
   p {
     text-align: left;
     margin-bottom: 100px;
+    @media (max-width: 767px) {
+      font-size: 10px;
+    }
   }
 }
 
