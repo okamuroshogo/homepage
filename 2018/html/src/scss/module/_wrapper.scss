@@ -1,0 +1,53 @@
+.wrapper {
+  background-color: #000000;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.logo-video {
+  width: 100%; 
+}
+
+.default-logo {
+  width: 100%;
+  text-align: center;
+  .okamuro .txt {
+    -webkit-text-size-adjust: 100%;
+    font-size: 8vw;
+    font-weight: bold;
+    font-family: Verdana;
+    letter-spacing: 0.8vw;
+    margin-bottom: 3vw;
+    color: rgb(136, 136, 136);
+  };
+  .hello .txt {
+    -webkit-text-size-adjust: 100%;
+    font-size: 8vw;
+    font-weight: bold;
+    font-family: Verdana;
+    letter-spacing: 0.8vw;
+    margin-bottom: 3vw;
+    color: rgb(136, 136, 136);
+  };
+}
+
+.col-md-offset-2 {
+  h2 {
+    margin-top: 100px;
+  }
+  p {
+    text-align: left;
+    margin-bottom: 100px;
+    @media (max-width: 767px) {
+      font-size: 10px;
+    }
+  }
+}
+
+.scroll-bellow {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}

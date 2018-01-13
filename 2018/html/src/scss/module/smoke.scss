@@ -1,0 +1,89 @@
+.smoke {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .txt {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .hello {
+    margin: 0;
+    padding: 0;
+    display: none;
+    animation: animate-down 1s linear both;
+  }
+
+  .okamuro {
+    margin: 0;
+    padding: 0;
+    display: none;
+    animation: animate-down 1s linear both;
+  }
+
+  .fadeout {
+    animation: animate-up 2s linear both;
+  }
+
+  @keyframes animate-down {
+    100% {
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) translateY(0px);
+      -webkit-transform: translate3d(0, 0, 0) translateY(0px);
+      -webkit-perspective: 1000;
+      opacity: 1;
+      filter: blur(1px);
+      -webkit-filter: blur(1px);
+    }
+   
+    0% {
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) translateY(-100px);
+      -webkit-transform: translate3d(0, 0, 0) translateY(-100px);
+      -webkit-perspective: 1000;
+      opacity: 0;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+    }
+  }
+
+  @keyframes animate-up {
+    0% {
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) rotate(0deg) translateY(0px);
+      -webkit-transform: translate3d(0, 0, 0) rotate(0deg) translateY(0px);
+      -webkit-perspective: 1000;
+      opacity: 1;
+      filter: blur(1px);
+      -webkit-filter: blur(1px);
+    }
+   
+    100% {
+      backface-visibility: hidden;
+      transform: translate3d(0, 0, 0) rotate(30deg) translateY(-100px);
+      -webkit-transform: translate3d(0, 0, 0) rotate(30deg) translateY(-100px);
+      -webkit-perspective: 1000;
+      opacity: 0;
+      filter: blur(100px);
+      -webkit-filter: blur(100px);
+    }
+  }
+   
+  .okamuro {
+    @for $i from 1 through 12 {
+      .txt:nth-child(#{$i}) {
+        animation-delay: #{random(100) / 500}s;
+      }
+    }
+  }
+
+  .hello {
+    @for $i from 1 through 12 {
+      .txt:nth-child(#{$i}) {
+        animation-delay: #{random(100) / 500}s;
+      }
+    }
+  }
+}
