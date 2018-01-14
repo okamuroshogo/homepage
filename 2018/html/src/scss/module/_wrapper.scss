@@ -52,6 +52,18 @@
   height: 100px;
 }
 
-.sc-fb {
-  margin-bottom: 10px;
+.copy-right {
+  margin: 0;
+  text-align: center;
+}
+
+.social-button-syncer {
+  text-align: right;
+  li {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .sc-fb {
+    margin-bottom: 6px;
+  }
 }

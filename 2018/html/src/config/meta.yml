@@ -15,7 +15,7 @@ url: https://www.okamu.ro/
 ogp_image_url: https://www.okamu.ro/images/ogp.jpg
 
 # Facebookアプリのapp id（入れないとWarningが出る）
-# facebook_app_id: 99999999999
+facebook_app_id: 736651669859029
 
 # Twitter cardsの管理者として登録するアカウント（※任意）
 # twitter_card_owner: '@TwitterJP'
