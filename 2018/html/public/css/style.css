@@ -10405,77 +10405,77 @@ button.close {
     filter: blur(100px);
     -webkit-filter: blur(100px); } }
   .smoke .okamuro .txt:nth-child(1) {
-    -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
+    -webkit-animation-delay: 0.09s;
+            animation-delay: 0.09s; }
   .smoke .okamuro .txt:nth-child(2) {
-    -webkit-animation-delay: 0.084s;
-            animation-delay: 0.084s; }
+    -webkit-animation-delay: 0.166s;
+            animation-delay: 0.166s; }
   .smoke .okamuro .txt:nth-child(3) {
-    -webkit-animation-delay: 0.084s;
-            animation-delay: 0.084s; }
+    -webkit-animation-delay: 0.026s;
+            animation-delay: 0.026s; }
   .smoke .okamuro .txt:nth-child(4) {
-    -webkit-animation-delay: 0.152s;
-            animation-delay: 0.152s; }
+    -webkit-animation-delay: 0.182s;
+            animation-delay: 0.182s; }
   .smoke .okamuro .txt:nth-child(5) {
-    -webkit-animation-delay: 0.148s;
-            animation-delay: 0.148s; }
-  .smoke .okamuro .txt:nth-child(6) {
-    -webkit-animation-delay: 0.152s;
-            animation-delay: 0.152s; }
-  .smoke .okamuro .txt:nth-child(7) {
-    -webkit-animation-delay: 0.028s;
-            animation-delay: 0.028s; }
-  .smoke .okamuro .txt:nth-child(8) {
-    -webkit-animation-delay: 0.016s;
-            animation-delay: 0.016s; }
-  .smoke .okamuro .txt:nth-child(9) {
-    -webkit-animation-delay: 0.022s;
-            animation-delay: 0.022s; }
-  .smoke .okamuro .txt:nth-child(10) {
-    -webkit-animation-delay: 0.032s;
-            animation-delay: 0.032s; }
-  .smoke .okamuro .txt:nth-child(11) {
     -webkit-animation-delay: 0.17s;
             animation-delay: 0.17s; }
+  .smoke .okamuro .txt:nth-child(6) {
+    -webkit-animation-delay: 0.086s;
+            animation-delay: 0.086s; }
+  .smoke .okamuro .txt:nth-child(7) {
+    -webkit-animation-delay: 0.02s;
+            animation-delay: 0.02s; }
+  .smoke .okamuro .txt:nth-child(8) {
+    -webkit-animation-delay: 0.096s;
+            animation-delay: 0.096s; }
+  .smoke .okamuro .txt:nth-child(9) {
+    -webkit-animation-delay: 0.13s;
+            animation-delay: 0.13s; }
+  .smoke .okamuro .txt:nth-child(10) {
+    -webkit-animation-delay: 0.006s;
+            animation-delay: 0.006s; }
+  .smoke .okamuro .txt:nth-child(11) {
+    -webkit-animation-delay: 0.082s;
+            animation-delay: 0.082s; }
   .smoke .okamuro .txt:nth-child(12) {
-    -webkit-animation-delay: 0.106s;
-            animation-delay: 0.106s; }
+    -webkit-animation-delay: 0.112s;
+            animation-delay: 0.112s; }
   .smoke .hello .txt:nth-child(1) {
-    -webkit-animation-delay: 0.124s;
-            animation-delay: 0.124s; }
+    -webkit-animation-delay: 0.058s;
+            animation-delay: 0.058s; }
   .smoke .hello .txt:nth-child(2) {
+    -webkit-animation-delay: 0.046s;
+            animation-delay: 0.046s; }
+  .smoke .hello .txt:nth-child(3) {
+    -webkit-animation-delay: 0.126s;
+            animation-delay: 0.126s; }
+  .smoke .hello .txt:nth-child(4) {
+    -webkit-animation-delay: 0.018s;
+            animation-delay: 0.018s; }
+  .smoke .hello .txt:nth-child(5) {
+    -webkit-animation-delay: 0.128s;
+            animation-delay: 0.128s; }
+  .smoke .hello .txt:nth-child(6) {
     -webkit-animation-delay: 0.142s;
             animation-delay: 0.142s; }
-  .smoke .hello .txt:nth-child(3) {
-    -webkit-animation-delay: 0.066s;
-            animation-delay: 0.066s; }
-  .smoke .hello .txt:nth-child(4) {
-    -webkit-animation-delay: 0.138s;
-            animation-delay: 0.138s; }
-  .smoke .hello .txt:nth-child(5) {
-    -webkit-animation-delay: 0.038s;
-            animation-delay: 0.038s; }
-  .smoke .hello .txt:nth-child(6) {
-    -webkit-animation-delay: 0.16s;
-            animation-delay: 0.16s; }
   .smoke .hello .txt:nth-child(7) {
-    -webkit-animation-delay: 0.032s;
-            animation-delay: 0.032s; }
+    -webkit-animation-delay: 0.046s;
+            animation-delay: 0.046s; }
   .smoke .hello .txt:nth-child(8) {
-    -webkit-animation-delay: 0.176s;
-            animation-delay: 0.176s; }
+    -webkit-animation-delay: 0.028s;
+            animation-delay: 0.028s; }
   .smoke .hello .txt:nth-child(9) {
-    -webkit-animation-delay: 0.078s;
-            animation-delay: 0.078s; }
+    -webkit-animation-delay: 0.17s;
+            animation-delay: 0.17s; }
   .smoke .hello .txt:nth-child(10) {
-    -webkit-animation-delay: 0.102s;
-            animation-delay: 0.102s; }
+    -webkit-animation-delay: 0.122s;
+            animation-delay: 0.122s; }
   .smoke .hello .txt:nth-child(11) {
-    -webkit-animation-delay: 0.012s;
-            animation-delay: 0.012s; }
+    -webkit-animation-delay: 0.076s;
+            animation-delay: 0.076s; }
   .smoke .hello .txt:nth-child(12) {
-    -webkit-animation-delay: 0.068s;
-            animation-delay: 0.068s; }
+    -webkit-animation-delay: 0.186s;
+            animation-delay: 0.186s; }
 
 /* Body 
 ------------------------------------- */
