@@ -9823,29 +9823,6 @@ var _jquery2 = _interopRequireDefault(_jquery);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var logoTexts = ['.hello', '.okamuro'];
-var index = 0;
-
-var logoAnimate = function logoAnimate() {
-  if (index < 0) {
-    index++;return;
-  }
-  (0, _jquery2.default)(logoTexts[index] + ' .txt').addClass('fadeout');
-  setTimeout(function () {
-    (0, _jquery2.default)(logoTexts[index] + ' .txt').removeClass("fadeout");
-    (0, _jquery2.default)(logoTexts[index]).hide();
-    index++;
-    index %= logoTexts.length;
-    (0, _jquery2.default)(logoTexts[index]).show().css('display', 'flex');
-  }, 2000);
-};
-
-(0, _jquery2.default)('.logo-video').on('ended', function () {
-  (0, _jquery2.default)('.logo-video').hide();
-  (0, _jquery2.default)(logoTexts[index]).show().css('display', 'flex');
-  setInterval(logoAnimate, 5000);
-});
-
 (0, _jquery2.default)(window).scroll(function () {
   if (window.pageYOffset > 0) {
     (0, _jquery2.default)('.scroll-bellow').hide();
